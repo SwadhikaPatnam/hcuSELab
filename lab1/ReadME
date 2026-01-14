@@ -1,0 +1,65 @@
+Task-1 : Problem Statement: Student Result Processing System 
+Design and implement a Student Result Processing System in C
+
+Folder structure
+stdResultPrcgSys.c  --- Main entry point
+fileOps.c/h         --- Input parsing + output file writing
+student.c/h         --- Student structures, Result calculation, validation, grade logic
+trie.c/h            --- Duplicate and valid roll number checking
+input.txt	    --- Input file containing student details
+op.txt 		    --- Student Results file
+
+Notes:
+
+Input file:
+The input student records can be single / multiple lines. But it should follow the order
+student roll no, name, subj1 name, minor, major, and so on for the remaining 4 subjects.
+The input is expected to be complete, i.e. complete student information along with 5 subject information is given.
+
+Validation:
+Roll number- Alphanumeric + Unique
+Name- Only alphabets
+Minor marks- [0,40]
+Major marks- [0,60]
+
+Result processing:
+For each subject we assigned total = minor + major marks, grade, point. 
+Grading is based on this scale
+o ≥ 90 → 0 → 10
+o 85-90 → A+ → 9
+o 75-85 → A → 8
+o 65-75 → B+ → 7
+o 60-65 → B → 6
+o 55-60 → C → 5
+o 50-55 → D → 4
+o < 50 → F → 0
+
+Each student gpa is calculated as the sum of points by the number of subjects 
+and percentage is calculated as the sum of total marks by number of subjects
+and based on percentage each student is given overall grade.
+
+The avg, high and low percentage is calculated based on student percentages 
+and Number of students in each grade category is based on student overall grade.
+
+Output: 
+Output has the following columns
+StdRNO	StdName	Sub1	Minor	Major	Total	Grade	Point	Sub2	Minor	Major	Total	Grade	Point	Sub3	Minor	Major	Total	Grade	Point	Sub4	Minor	Major	Total	Grade	Point	Sub5	Minor	Major	Total	Grade	Point	TotalMarks	GPA	Percentage	OverallGrade
+
+Followed by Class Average Percentage, Highest and Lowest Percentage, Number of students in each grade category.
+
+Running the Program
+
+Build the files using make
+
+		make 
+   		
+The program requires two command-line arguments: the input file (student records) and the desired output file (processed student result records) name.
+
+run it as 
+
+		./stdResultSys input.txt op.txt
+	
+To clean the files	
+
+		make clean
+

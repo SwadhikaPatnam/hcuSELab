@@ -1,0 +1,9 @@
+25mcmi01 abc aga 10 20 psm 23 20 krr 34 30
+algo 20 50
+aos 4 55
+
+25MCMI02 defgh 
+dc,10, 40 
+psm; 23; 50 krr 14 30
+algo 22 58
+aos 24 55

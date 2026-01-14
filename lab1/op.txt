@@ -1,0 +1,17 @@
+StdRNO	StdName	Sub1	Minor	Major	Total	Grade	Point	Sub2	Minor	Major	Total	Grade	Point	Sub3	Minor	Major	Total	Grade	Point	Sub4	Minor	Major	Total	Grade	Point	Sub5	Minor	Major	Total	Grade	Point	TotalMarks	GPA	Percentage	OverallGrade
+25mcmi01  abc	aga	10	20	30	F	0	psm	23	20	43	F	0	krr	34	30	64	B	6	algo	20	50	70	B+	7	aos	4	55	59	C	5	266	3.60	53.20	D
+25MCMI02  defgh	dc	10	40	50	D	4	psm	23	50	73	B+	7	krr	14	30	44	F	0	algo	22	58	80	A	8	aos	24	55	79	A	8	326	5.40	65.20	B+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Class Average Percentage: 59.20
+Class Highest Percentage: 65.20
+Class Lowest Percentage: 53.20
+Number of students in each grade category
+O: 0
+A+: 0
+A: 0
+B+: 1
+B: 0
+C: 0
+D: 1
+F: 0
